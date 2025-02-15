@@ -19,6 +19,7 @@ const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary + 99};
     margin-bottom: 10px;
+    
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
@@ -26,6 +27,7 @@ const Description = styled.div`
 
 const Span = styled.span`
 overflow: hidden;
+white-space: pre-wrap;
 display: -webkit-box;
 max-width: 100%;
 -webkit-line-clamp: 4;
