@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroBgAnimation from '../HeroBgAnimation'
 import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle,SocialMediaIcons,SocialMediaIcon, ResumeButton } from './HeroStyle'
-import HeroImg from '../../images/self.jpg';
+import HeroImg from '../../images/heroImg.png';
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
 
@@ -14,9 +14,9 @@ const HeroSection = () => {
                 </HeroBg>
                 <HeroInnerContainer >
                     <HeroLeftContainer id="Left">
-                        <Title>Hi, I am <br /> {Bio.name}</Title>
+                        <Title><br /> {Bio.name}</Title>
                         <TextLoop>
-                            I am a
+                            {/* I am a */}
                             <Span>
                                 <Typewriter
                                     options={{
@@ -28,7 +28,7 @@ const HeroSection = () => {
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
-                        <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
+                        {/* <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumesButton> */}
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">

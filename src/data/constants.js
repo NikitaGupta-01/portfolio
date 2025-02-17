@@ -7,17 +7,17 @@ import gitlabLogo from '../images/gitlab.webp';
 import infosysLogo from '../images/infosys.png';
 import mmsLogo from '../images/mmsLogo.png';
 import juetLogo from '../images/juetLogo.jpeg';
+import ExpressLogo from '../images/ExpressJsLogo.jpeg';
+import NodeJSLogo from '../images/NodeJsLogo.jpeg';
 
 export const Bio = {
-  name: "Nikita Gupta",
+  name: "Innovibe Tech Solution",
   roles: [
-    "ReactJS Developer",
-    "UI Developer",
-    "Programmer",
-    "Problem Solver"
+    "We build ! You Grow !",
+    "Fueled by Creativity",
+    "Driven By Technology"
   ],
-  description:
-    "Result-oriented and innovative software developer with 3 years of experience in developing web applications using ReactJS, JavaScript, Redux Saga and knowledge on Java and Spring Boot. A strong problem solver and team player with a passion for learning I am dedicated to delivering high-quality results.",
+  description:"We turn ideas into cutting-edge digital solutions. Specializing in web development, app development, and software solutions, we craft seamless, high-performing, and user-friendly experiences tailored to your business needs. Whether it's a dynamic website, a powerful mobile app, or custom software, we bring innovation and expertise to every project.",
   github: "https://github.com/NikitaGupta-01/",
   resume:
     "https://drive.google.com/file/d/16793kwUMY50ZGFbXh81ap2rpH4meimd_/view?usp=sharing",
@@ -86,6 +86,14 @@ export const skills = [
       {
         name: "Spring Boot",
         image: springBoot,
+      },
+      {
+        name: "Express Js",
+        image:ExpressLogo,
+      },
+      {
+        name: "Node Js",
+        image:NodeJSLogo,
       },
     ],
   },
@@ -262,20 +270,20 @@ export const projects = [
     category: "web app",
     github: "https://github.com/rishavchanda/Podstream",
     webapp: "https://podstream.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],
+    // member: [
+    //   {
+    //     name: "Rishav Chanda",
+    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+    //     github: "https://github.com/rishavchanda/",
+    //   },
+    //   {
+    //     name: "Upasana Chaudhuri",
+    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
+    //     github: "https://github.com/upasana0710",
+    //   },
+    // ],
   },
   {
     id: 1,
@@ -309,20 +317,20 @@ export const projects = [
     category: "machine learning",
     github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
     webapp: "https://brain-tumor.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],
+    // member: [
+    //   {
+    //     name: "Rishav Chanda",
+    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+    //     github: "https://github.com/rishavchanda/",
+    //   },
+    //   {
+    //     name: "Upasana Chaudhuri",
+    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
+    //     github: "https://github.com/upasana0710",
+    //   },
+    // ],
   },
   {
     id: 3,
