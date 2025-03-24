@@ -22,9 +22,6 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/16793kwUMY50ZGFbXh81ap2rpH4meimd_/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/nikita-gupta-171071/",
-  // twitter: "https://twitter.com/RishavChanda",
-  // insta: "https://www.instagram.com/rishav_chanda/",
-  // facebook: "https://www.facebook.com/rishav.chanda.165/",
 };
 
 export const skills = [
@@ -145,92 +142,313 @@ export const skills = [
   }
 ];
 
-export const experiences = [
+export const marketingSkills = [
+  {
+    title: "Content Marketing",
+    skills: [
+      {
+        name: "Content Writing",
+        image:
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+      },
+      {
+        name: "Production",
+        image:
+          "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
+      },
+      {
+        name: "Editing",
+        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+      },
+      {
+        name: "Graphic Designing",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+      },
+      {
+        name: "Video Editing",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+      }
+    ],
+  },
+  {
+    title: "Social Media",
+    skills: [
+      {
+        name: "Instagram",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      },
+      {
+        name: "LinkedIn",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      },
+      {
+        name: "YouTube",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+      },
+      {
+        name: "FaceBook",
+        image: springBoot,
+      },
+      {
+        name: "X (Twitter)",
+        image:ExpressLogo,
+      },
+      {
+        name: "Threads",
+        image:NodeJSLogo,
+      },
+    ],
+  },
+  {
+    title: "Performance Marketing",
+    skills: [
+      {
+        name: "Meta Ads",
+        image:
+          gitLogo,
+      },
+      {
+        name: "Google Ads",
+        image: gitlabLogo,
+      },
+      {
+        name: "LinkedIn Ads",
+        image:
+          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+      }
+    ],
+  },
+  {
+    title: "SEO",
+    skills: [
+      {
+        name: "On Page",
+        image:
+          gitLogo,
+      },
+      {
+        name: "Off Page",
+        image: gitlabLogo,
+      },
+      {
+        name: "Backlinks",
+        image:
+          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+      },
+      {
+        name: "Blogs Writing",
+        image:
+          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+      }
+    ],
+  },
+  {
+    title: "Digital Marketing",
+    skills :[
+      {
+        name:"Email",
+        image: agileLogo,
+      },
+      {
+        name:"WhatsApp",
+        image: agileLogo,
+      },
+      {
+        name:"SMS",
+        image: agileLogo,
+      }
+    ]
+  },
+  {
+    title: "Influencer Marketing",
+    skills :[
+      {
+        name:"UGC",
+        image: agileLogo,
+      },
+      {
+        name:"Macro",
+        image: agileLogo,
+      },
+      {
+        name:"Micro",
+        image: agileLogo,
+      },
+      {
+        name:"Nano",
+        image: agileLogo,
+      }
+    ]
+  },
+  {
+    title: "Branding",
+    skills :[
+      {
+        name:"Logo Creation",
+        image: agileLogo,
+      },
+      {
+        name:"Brand Kit",
+        image: agileLogo,
+      },
+      {
+        name:"Brand Creation",
+        image: agileLogo,
+      },
+      {
+        name:"Brand Analysis",
+        image: agileLogo,
+      }
+    ]
+  }
+];
+
+
+export const clients = [
+  {
+    id: 9,
+    title: "Neemroli",
+    testimonial: "It’s been a delight to work with Shruti. She took time to understand the brand’s outlook and created the content very thoughtfully. What I liked the most about her was that she was always open to suggestions, delivered on time, and came up with content aligned to our brand’s vision board. Shruti has a way of giving a personal touch to the work she does. I would definitely recommend her to my friends and family.",
+    description:
+      [
+    "<li>Carried out community management by responding to over 100 daily comments and messages across platforms. </li>",
+    "<li>Analyzed and updated the social marketing strategy, resulting in a 30% increase in website traffic within two months.</li>",
+    "<li>Managed accounts and tracked performance using tools like Meta Business Suite and Google Analytics.</li>",
+    "<li>Assisted in planning and executing a social media campaign that led to a 15% increase in sales.</li>"
+  ],
+    image:
+      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    tags: [
+      "Docker",
+      "AWS",
+      "DuckDNS",
+      "Eslint",
+      "Husky",
+      "CI/CD",
+      "React Js",
+      "MongoDb",
+      "Node Js",
+      "Express Js",
+      "Redux",
+    ],
+    category: "web app",
+  },
   {
     id: 0,
-    img: infosysLogo,
-    role: "Frontend Developer",
-    company: "Infosys",
-    date: "August 2021 - Present",
-    desc: `- Utilized React JS to architect and develop the Responsive Web Design as per the UX, enhancing user interactions and optimizing performance.  Used Redux Saga for efficient state management and API integration, ensuring a smooth and responsive application using material UI and styled-components for styling.
-- Pioneered the establishment of UI component playground using Storybook, providing a streamlined environment for developing, testing, and showcasing reusable UI components. This initiative led to a 30% reduction in development time, enabling swift testing and exhibition of reusable UI components.
-- Collaborated with cross-functional teams to gather requirements, define technical specifications, and ensure alignment with project objectives. Spearheaded the integration of agile practices, yielding a significant decrease in post-release defects.
-- Collaborated with the backend team, integrated APIs using redux saga and used try-catch for error handling and implemented fallback UI for corner cases.
-- Implemented JWT-based authentication where a user logs in, and the server responds with a JWT token. 
-- Contributed in Sprint planning to calculate the estimates and efforts required for the requirements and participated in parallel programming and code review.
-- Resolved the 50 plus bugs of the client’s internal platform.
-- Technology used: ReactJS, Redux Saga, JavaScript, HTML5, Material UI, MySQL, Jest
-`,
-    skills: [
-      "ReactJS",
-      "Redux Saga",
-      "Material UI",
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-    ],
+    title: "Heaven Essence",
+    date: "Apr 2023 - May 2023",
+    description:
+      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    category: "web app",
+    webapp: "https://podstream.netlify.app/",
   },
   {
     id: 1,
-    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-    role: "Fullstack Internship",
-    company: "Bizbuzz Technologies",
-    date: "June 2020 - December 2020",
-    desc: "As a fullstack developer build the backend API for interacting with frontend of e-commerce website. ",
-    skills: [
-      "Django",
-      "ReactJS",
-      "JavaScript",
-      "Python",
-      "Pandas",
-      "MySQL"
+    title: "My MAxx Home",
+    date: "Oct 2022 - Present",
+    description:
+      "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+    tags: [
+      "React Js",
+      "MongoDb",
+      "Node Js",
+      "Express Js",
+      "Redux",
+      "NodeMailer",
     ],
+    category: "web app",
+    github: "https://github.com/rishavchanda/Project-Management-App",
+    webapp: "https://vexa-app.netlify.app/",
   },
   {
     id: 2,
-    // img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-    role: "Intern ",
-    company: "Unnbox Innovation",
-    date: "April 2020 - May 2020",
-    desc: "Contributing in backend team in designing and developing the backend functionalities.",
-    skills: [
-      "Django",
-      "Python",
-      "MySQL"
-    ],
-    // doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
+    title: "Gulf Frost",
+    date: "Jan 2023 - Mar 2023",
+    description:
+      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+    image:
+      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    category: "machine learning",
+    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
+    webapp: "https://brain-tumor.netlify.app/",
+  },
+  {
+    id: 5,
+    title: "Phoenix Mills",
+    date: "Jun 2023 - Jul 2023",
+    description:
+      "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
+    tags: ["React Native", "JavaScript", "Axios"],
+    category: "android app",
+    github: "https://github.com/rishavchanda/Job-finder-App",
+    webapp: "https://github.com/rishavchanda/Job-finder-App",
+  },
+  {
+    id: 6,
+    title: "Gulliyan",
+    date: "Jan 2021",
+    description:
+      "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
+    image:
+      "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
+    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    category: "machine learning",
+    github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+  },
+  {
+    id: 7,
+    title: "PocketCoach & AIGI",
+    testimonial: "Shruti is a consummate professional, highly skilled, and exceptionally creative. Her innovative approach and dedication significantly boosted our online presence.",
+    description:
+      "<h2>PocketCoach – Elevating Digital Presence & Brand Identity</h2> <br> From launching a brand-new Instagram page to scaling it from 0 to 100+ followers in just six weeks, we built a strong audience engagement strategy using creative posts and reels. Our expertise extended to LinkedIn, where we amplified brand visibility with strategic content and marketing efforts. <br> For the PocketCoach 2.0 launch, we designed a compelling brand identity and brand kit, seamlessly integrating it across the app and social media platforms. Our well-planned launch campaign generated buzz and ensured a successful rollout across multiple channels.",
+    image:
+      "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
+    tags: ["Lead Generation", "Instagram", "Brand Creation", "Brand Kit", "LinkedIn", "LinkedIn Ads"],
+    category: "",
+  },
+  {
+    id: 8,
+    title: "Energy Dais",
+    testimonial: "Shruti is one of the most dedicated professionals I've worked with, always willing to go the extra mile.",
+    description:
+      "Worked on Energy Dais account to drive growth and increase brand awareness.",
+    image:
+      "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
+    tags: ["Instagram", "Social Media Marketing", "Brand Creation"],
+    category: "machine learning",
+    github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+  },
+  {
+    id: 7,
+    title: "DevSquad",
+    date: "Jan 2021",
+    description:
+      "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
+    image:
+      "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
+    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    category: "machine learning",
+    github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
   },
 ];
 
-export const education = [
-  {
-    id: 0,
-    img: juetLogo,
-    school: "Jaypee University of Engineering and Technology, Guna, Madhya Pradesh",
-    date: "June 2017 - June 2021",
-    grade: "8.5 CGPA",
-    desc: "Guraduated in bachelors with majors in Computer Science, in the course have completed Data Structure, Database Management System, Object Oriented Programming, among others. Also participated in activities and was part of college committee of Media management.",
-    degree: "Bachelor of Technology - BTech, Computer Science",
-  },
-  {
-    id: 1,
-    img: mmsLogo,
-    school: "Mercy Memorial School, Kanpur, Uttar Pradesh",
-    date: "Apr 2016 - Apr 2017",
-    grade: "89.9%",
-    desc: "I completed my class 12 high school education at Mercy Memorial School, where I studied Science with Computer Science.",
-    degree: "ISC(XII), Science with Computer",
-  },
-  {
-    id: 2,
-    img: mmsLogo,
-    school: "Mercy Memorial School, Kanpur, Uttar Pradesh",
-    date: "Apr 2014 - Apr 2015",
-    grade: "92.6%",
-    desc: "I completed my class 10 education at Mercy Memorial School, where I studied Science with Computer Application.",
-    degree: "ICSC(X)",
-  },
-];
+
 
 export const projects = [
   {
