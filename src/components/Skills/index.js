@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import { skills } from '../../data/constants'
+import { skills,marketingSkills } from '../../data/constants'
+import { ToggleButtonGroup, ToggleButton, Divider } from './../Projects/ProjectsStyle';
 
 const Container = styled.div`
 display: flex;
@@ -118,22 +119,37 @@ const SkillImage = styled.img`
   height: 24px;
 `
 
-
 const Skills = () => {
+  const [toggle, setToggle] = useState('marketing');
+
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Technical Expertise</Title>
-        <Desc>Here are list of Technologies we have worked upon in our several projects.
-        </Desc>
-        <SkillsContainer>
+        <Title>Expertise</Title>
+        {/* <Desc>Here are list of Technologies we have worked upon in our several projects.
+        </Desc> */}
+        <ToggleButtonGroup >
+          {toggle === 'marketing' ?
+            <ToggleButton active value="marketing" onClick={() => setToggle('marketing')}>Marketing</ToggleButton>
+            :
+            <ToggleButton value="marketing" onClick={() => setToggle('marketing')}>Marketing</ToggleButton>
+          }
+          <Divider />
+          {toggle === 'technology' ?
+            <ToggleButton active value="technology" onClick={() => setToggle('technology')}>Technology</ToggleButton>
+            :
+            <ToggleButton value="technology" onClick={() => setToggle('technology')}>Technology</ToggleButton>
+          }
+        </ToggleButtonGroup>
+
+        {toggle === 'technology' ? (<SkillsContainer>
           {skills.map((skill) => (
             <Skill>
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>
                 {skill.skills.map((item) => (
                   <SkillItem>
-                    <SkillImage src={item.image}/>
+                    <SkillImage src={item.image} />
                     {item.name}
                   </SkillItem>
                 ))}
@@ -141,7 +157,24 @@ const Skills = () => {
             </Skill>
           ))}
 
-        </SkillsContainer>
+        </SkillsContainer>) : (
+          <SkillsContainer>
+            {marketingSkills.map((skill) => (
+            <Skill>
+              <SkillTitle>{skill.title}</SkillTitle>
+              <SkillList>
+                {skill.skills.map((item) => (
+                  <SkillItem>
+                    <SkillImage src={item.image} />
+                    {item.name}
+                  </SkillItem>
+                ))}
+              </SkillList>
+            </Skill>
+          ))}
+
+          </SkillsContainer>
+        )}
       </Wrapper>
     </Container>
   )

@@ -2,15 +2,16 @@ import React from 'react'
 import { useState } from 'react'
 import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle'
 import ProjectCard from '../Cards/ProjectCards'
-import { projects } from '../../data/constants'
+import { projects,clients } from '../../data/constants'
 
 
 const Projects = ({openModal,setOpenModal}) => {
   const [toggle, setToggle] = useState('all');
+  let allWork = [...clients,...projects];
   return (
     <Container id="projects">
       <Wrapper>
-        <Title>Projects</Title>
+        <Title>Our Work</Title>
         <Desc>
           I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
         </Desc>
@@ -19,6 +20,12 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
             :
             <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+          }
+          <Divider />
+          {toggle === 'marketing' ?
+            <ToggleButton active value="marketing" onClick={() => setToggle('marketing')}>Marketing</ToggleButton>
+            :
+            <ToggleButton value="marketing" onClick={() => setToggle('marketing')}>Marketing</ToggleButton>
           }
           <Divider />
           {toggle === 'web app' ?
@@ -33,18 +40,18 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton value="android app" onClick={() => setToggle('android app')}>ANDROID APP'S</ToggleButton>
           }
           <Divider />
-          {toggle === 'machine learning' ?
-            <ToggleButton active value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
-            :
-            <ToggleButton value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
-          }
+          
         </ToggleButtonGroup>
         <CardContainer>
-          {toggle === 'all' && projects
+          {toggle === 'all' && allWork
             .map((project) => (
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
-          {projects
+            {toggle === 'marketing' && clients
+            .map((project) => (
+              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+            ))}
+          {toggle === 'web app' || toggle === 'android app' && projects
             .filter((item) => item.category == toggle)
             .map((project) => (
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>

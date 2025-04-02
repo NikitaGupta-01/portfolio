@@ -91,9 +91,9 @@ function Footer() {
         <Logo>Innovibe Technology Solution</Logo>
         <Nav>
           <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Technical Expertise</NavLink>
+          <NavLink href="#skills">Expertise</NavLink>
           {/* <NavLink href="#experience">Experience</NavLink> */}
-          <NavLink href="#projects">Projects</NavLink>
+          <NavLink href="#projects">Our Work</NavLink>
           <NavLink href="#contact">Contact Us</NavLink>
 
           {/* <NavLink href="#education">Education</NavLink> */}
