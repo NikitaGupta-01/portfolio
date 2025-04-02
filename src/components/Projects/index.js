@@ -51,7 +51,12 @@ const Projects = ({openModal,setOpenModal}) => {
             .map((project) => (
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
-          {toggle === 'web app' || toggle === 'android app' && projects
+          {toggle === 'web app'  && projects
+            .filter((item) => item.category == toggle)
+            .map((project) => (
+              <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+            ))}
+            {toggle === 'android app'  && projects
             .filter((item) => item.category == toggle)
             .map((project) => (
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal}/>
